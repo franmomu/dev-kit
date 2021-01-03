@@ -77,7 +77,6 @@ final class Project
 
     public static function fromValues(string $name, array $config, Package $package): self
     {
-        
         $branches = [];
         foreach ($config['branches'] as $branchName => $branchConfig) {
             $branches[] = Branch::fromValues($branchName, $branchConfig);
